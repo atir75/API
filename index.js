@@ -17,10 +17,24 @@ let db = [
     { '3': {Nome: `Cliente 3`, Idade: `20`} }
 ]
 
-
+//buscar dados 
 app.get(`/`, (req, res) => {
     return res.json({db})
 })
+
+
+//inserir dados 
+app.post(`/`, (req, res) => {
+    const body = req.body
+
+    if(!body)
+    return res.status(400).end()
+
+    db.push(body)
+    return res.json(body)
+})
+
+
 
 
 
