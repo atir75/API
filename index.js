@@ -18,6 +18,10 @@ let db = [
 ]
 
 
+app.get(`/`, (req, res) => {
+    return res.json({db})
+})
+
 
 
 app.listen(21262, () =>{
