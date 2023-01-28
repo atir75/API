@@ -4,9 +4,11 @@ const routes = express.Router()
 
 
 let db = [
-    { '1': {Nome: `Cliente 1`, Idade: `20`} },
+    { '1': {Nome: `Cliente 1`, Idade: `35`} },
     { '2': {Nome: `Cliente 2`, Idade: `20`} },
-    { '3': {Nome: `Cliente 3`, Idade: `20`} }
+    { '3': {Nome: `Cliente 3`, Idade: `25`} },
+    { '4': {Nome: `Cliente 4`, Idade: `60`} },
+    { '5': {Nome: `Cliente 5`, Idade: `26`} }
 ]
 
 //buscar dados 
